@@ -1,0 +1,33 @@
+GeleKaas = str(input("is de kaas geel? "))
+
+if GeleKaas == "nee":
+    BlauweSchimmels = str(input("heeft de kaas blauwe schimmels? "))
+
+    if BlauweSchimmels == "nee":
+        KaasKorst = str(input("heeft de kaas een korst? "))
+        if KaasKorst == "nee":
+            print ("Mozzarella")
+        else:
+            print ("Camembert")
+
+    elif BlauweSchimmels == "ja":
+        Kaaskorst = str(input("heeft de kaas een korst? "))
+        if Kaaskorst == "ja":
+            print ("Bleu de Rochbaron")
+        else:
+            print ("Foumme d'Ambert")
+else:
+    GatenKaas = str(input("zitten er gaten in de kaas? "))
+
+    if GatenKaas == "ja":
+        DureKaas = str(input("is de kaas belachelijk duur? "))
+        if DureKaas == "ja":
+            print ("Emmenthaler")
+        else:
+            print ("Leerdammer")    
+    else:
+        HardeKaas = str(input("is de kaas hard als steen? "))
+        if HardeKaas == "ja":
+            print ("Pammigiano Reggiano")
+        else:
+            print ("Goudse kaas")
